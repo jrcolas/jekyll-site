@@ -138,6 +138,15 @@ a:hover {
 	color: white;
 }
 
+@media only screen and (min-width: 150px) and (max-width: 695px) {
+	
+	.body {
+		width: 800px;
+		clear: both;
+		margin: 0 auto;
+	}
+}
+
 @media only screen and (min-width: 150px) and (max-width: 600px)
 {
 	.body {
