@@ -8,22 +8,24 @@ order: 1
 		
 		<div class="mainContent">
 			<div class="content">
-				<article class="topContent">
-					<header>
-						<h2><a href="#" title="First Post">First Post</a></h2>
-					</header>
+				{% for post in site.posts limit:1 %}
+				<h2>Latest Post</h2>
+					<article class="topContent">
+						
 	
-					<footer>
-						<p class="post-info">This post is written by JrColas</p>
-					</footer>
-	
-					<content>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis aliquam lacus. In dui nisl, pulvinar sit amet nibh quis, mattis efficitur dui. Vestibulum non pellentesque lectus, finibus tempor elit. Cras orci ex, pulvinar vel dignissim a, venenatis non quam. Aenean id neque in arcu posuere luctus et vitae odio. </p>
-	
-						<p>	Proin ac tortor a neque finibus volutpat nec vehicula ante. Aliquam convallis, justo sed facilisis iaculis, magna felis volutpat dui, sit amet euismod tellus lorem eu erat. Vestibulum vel vulputate enim. </p>
-	
-					</content>
-				</article>
+						<header>
+							<a href="{{ post.url | prepend: site.url }}"><h2>{{ post.title }}</h2></a>
+						</header>
+		
+						<footer>
+							<p class="post-info">by {{ post.author }} on {{post.date | date_to_string }}</p>
+						</footer>
+		
+						<content>
+							<p>{{ post.preview }}</p>	
+						</content>					
+					</article>
+				{% endfor %}
 				
 				<article class="bottomContent">
 					<header>

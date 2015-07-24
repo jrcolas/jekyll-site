@@ -12,6 +12,10 @@ a:link, a:visited {
 	color: black;
 }
 
+a:hover {
+	color: white;
+}
+
 
 
 .body {
@@ -91,9 +95,18 @@ a:link, a:visited {
 
 .topContent, .bottomContent {
 	background-color: white;
-	padding: 3% 5%;
+	padding: 1% 5% 1% 5%;
 	margin-top: 2%;
 
+}
+
+.topContent header a:hover, .bottomContent header a:hover {
+	color: #508dff;
+}
+
+.post-info {
+	font-size: 11pt;
+	font-style: italic;
 }
 
 .feedSide {
