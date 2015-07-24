@@ -169,6 +169,11 @@ a:hover {
 		margin-bottom: 5%;
 	
 	}
+	
+	.feedSide article center a img {
+		max-width: 100%;
+		height: auto;
+	}
 }
 
 @media only screen and (min-width: 150px) and (max-width: 600px)
@@ -290,6 +295,11 @@ End Navigation */
 		margin-top: 2%;
 		margin-bottom: 4%
 
+	}
+	
+	.feedSide article center a img {
+		max-width: 100%;
+		height: auto;
 	}
 
 	.top-sidebar, .middle-sidebar, .bottom-sidebar {
