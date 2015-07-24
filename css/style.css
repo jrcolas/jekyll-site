@@ -13,13 +13,13 @@ a:link, a:visited {
 }
 
 a:hover {
-	color: white;
+	color: #508dff;
 }
 
 
 
 .body {
-	width: 80%;
+	width: 960px;
 	clear: both;
 	margin: 0 auto;
 }
@@ -76,17 +76,22 @@ a:hover {
 	color: #ffffff;
 }
 
+.mainHeader nav ul li a:hover{
+	color: white;
+}
+
+
 .active {
 	color: #81D425 !important;
 }
 
 
 
-.mainContent {
+.mainContent, .mainSidebar {
 	margin-top: 165px;
 	line-height: 25px;
-
 }
+
 
 .content {
 	width: 70%;
@@ -115,8 +120,7 @@ a:hover {
 	background-color: white;
 	margin-left: 1%;
 	padding: 2% 3%;
-	margin-bottom: 2%;
-	margin-top: 1.4%;
+	margin-bottom: 5%;
 
 }
 
