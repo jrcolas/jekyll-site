@@ -1,51 +1,48 @@
 ---
 layout: default
-title: "JrColas Blog"
-navigationName: "Home"
-description: "A Clean Blog Jekyll-ed by JrColas"
-coverImg: "home-bg.jpg"
-order: 1
+title: Home - JrColas
+
 ---
 
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                {% for post in paginator.posts %}
-                    <div class="post-preview">
-                        <a href="{{ post.url | prepend: site.url}}">
-                            <h2 class="post-title">
-                                {{ post.title }}
-                            </h2>
-                            <h3 class="post-subtitle">
-                                {{ post.description }}
-                            </h3>
-                        </a>
-                        <p class="post-meta">Posted by <a href="#">{{ post.author }}</a> on {{post.date | date_to_string }}</p>
-                    </div>
-                    <hr>
-
-                {% endfor %}
-                <!-- Pager -->
-                {% if paginator.total_pages > 1 %}
-                <ul class="pager">
-                {% if paginator.previous_page %}
-                    <li class="previous">
-                        <a href="{{ paginator.previous_page_path | prepend: site.url | replace: '//', '/' }}">&larr; New Posts</a>
-                    </li>
-                    {% endif %}
-
-                    {% if paginator.next_page %}
-                    <li class="next">
-                        <a href="{{ paginator.next_page_path | prepend: site.url | replace: '//', '/' }}">Older Posts &rarr;</a>
-                    </li>
-                    {% endif %}
-                </ul>
-                {% endif %}
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-    
+		
+		<div class="mainContent">
+			<div class="content">
+				<article class="topContent">
+					<header>
+						<h2><a href="#" title="First Post">First Post</a></h2>
+					</header>
+	
+					<footer>
+						<p class="post-info">This post is written by JrColas</p>
+					</footer>
+	
+					<content>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis aliquam lacus. In dui nisl, pulvinar sit amet nibh quis, mattis efficitur dui. Vestibulum non pellentesque lectus, finibus tempor elit. Cras orci ex, pulvinar vel dignissim a, venenatis non quam. Aenean id neque in arcu posuere luctus et vitae odio. </p>
+	
+						<p>	Proin ac tortor a neque finibus volutpat nec vehicula ante. Aliquam convallis, justo sed facilisis iaculis, magna felis volutpat dui, sit amet euismod tellus lorem eu erat. Vestibulum vel vulputate enim. </p>
+	
+					</content>
+				</article>
+				
+				<article class="bottomContent">
+					<header>
+						<h2><a href="#" title="First Post">Second Post</a></h2>
+					</header>
+	
+					<footer>
+						<p class="post-info">This post is written by JrColas</p>
+					</footer>
+	
+					<content>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis aliquam lacus. In dui nisl, pulvinar sit amet nibh quis, mattis efficitur dui. Vestibulum non pellentesque lectus, finibus tempor elit. Cras orci ex, pulvinar vel dignissim a, venenatis non quam. Aenean id neque in arcu posuere luctus et vitae odio. </p>
+	
+						<p>	Proin ac tortor a neque finibus volutpat nec vehicula ante. Aliquam convallis, justo sed facilisis iaculis, magna felis volutpat dui, sit amet euismod tellus lorem eu erat. Vestibulum vel vulputate enim. </p>
+	
+					</content>
+				</article>
+			</div>
+		</div>
+			
+			
+			
+			
