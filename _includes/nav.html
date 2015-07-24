@@ -1,1 +1,21 @@
 <!-- Navigation -->
+<header class="mainHeader">
+    <img src="{{ site.url }}/images/logo.png">
+    
+    <nav>           
+        <ul>
+            {% assign pages_list = site.pages %}
+            {% assign group = 'navigation' %}
+            {% include pages_list %}
+        </ul>               
+
+        <select>
+            <option value="">Navigate to...</option>
+            
+            <option value="index.html" selected="{% if page.url == '/index.html' %}selected{% endif %}">Home</option>
+            <option value="music.html" selected="{% if page.url == '/music.html' %}selected{% endif %}">Music</option>
+            <option value="blog.html" selected="{% if page.url == '/blog.html' %}selected{% endif %}">Blog</option>
+            <option value="about.html" selected="{% if page.url == '/contact.html' %}selected{% endif %}">Contact</option>                  
+        </select>
+    </nav>          
+</header>
