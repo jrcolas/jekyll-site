@@ -1,8 +1,9 @@
 ---
 layout: default
-title: "Blog - JrColas"
+title: "Blog"
 group: "navigation"
 navigationName: "BLOG"
+order: 3
 ---
 
 		
@@ -12,7 +13,7 @@ navigationName: "BLOG"
 				<article class="topContent">
 
 					<header>
-						<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+						<a href="{{ post.url | prepend: site.url }}"><h2>{{ post.title }}</h2></a>
 					</header>
 	
 					<footer>
@@ -26,6 +27,25 @@ navigationName: "BLOG"
 			{% endfor %}
 				
 			</div>
+
+			<!--Pager -->
+			{% if paginator.total_pages > 1 %}
+			<ul class="pager">
+				{% if paginator.previous_page %}
+				<li class="previous">
+					<a href="{{ paginator.previous_page_path | prepend: site.url |replace: '//', '/' }}">&larr; Latest Posts</a>
+
+				</li>
+				{% endif %}
+
+				{% if paginator.next_page %}
+				<li class="next">
+					<a href="{{paginator.next_page_path | prepend: site.url |replace: '//', '/' }}">Older Posts &rarr;</a>
+				</li>
+				{% endif %}
+			</ul>
+			{% endif %}
+
 		</div>
 			
 			
