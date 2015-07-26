@@ -10,22 +10,24 @@ order: 2
 		<div class="mainContent">
 			<div class="content">
 				<h2>Music Releases</h2>
-				<article class="topContent">
-					<header>
-						<h2><a href="#" title="First Post">Coming soon!</a></h2>
-					</header>
-	
-					<footer>
-						<p class="post-info">by JrColas</p>
-					</footer>
-	
-					<content>
-						<p>This page is coming soon!</p>
-	
-						<p>	Learning some new Jekyll stuff to get this page working as I want it to. </p>
-	
-					</content>
-				</article>
+				{% for post in site.posts %}
+					{% if post.tag == "music" %}
+						<article class="topContent">
+		
+							<header>
+								<a href="{{ post.url | prepend: site.url }}"><h2>{{ post.title }}</h2></a>
+							</header>
+			
+							<footer>
+								<p class="post-info">by {{ post.author }} on {{post.date | date_to_string }}</p>
+							</footer>
+			
+							<content>
+								<p>{{ post.preview }}</p>	
+							</content>					
+						</article>
+					{% endif %}	
+				{% endfor %}
 				
 			</div>
 		</div>

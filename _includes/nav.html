@@ -12,13 +12,13 @@
             {% include pages_list %}
         </ul>               
 
-        <select>
-            <option value="">Navigate to...</option>
+        <select onchange="location = this.options[this.selectedIndex].value;">
+            <option value="" selected="selected">Navigate to...</option>
             
-            <option value="index.html" selected="{% if page.url == '/index.html' %}selected{% endif %}">Home</option>
-            <option value="music.html" selected="{% if page.url == '/music.html' %}selected{% endif %}">Music</option>
-            <option value="blog.html" selected="{% if page.url == '/blog.html' %}selected{% endif %}">Blog</option>
-            <option value="about.html" selected="{% if page.url == '/contact.html' %}selected{% endif %}">Contact</option>                  
+            <option value="index.html">Home</option>
+            <option value="music.html">Music</option>
+            <option value="blog.html">Blog</option>
+            <option value="about.html">About</option>                  
         </select>
     </nav>          
 </header>

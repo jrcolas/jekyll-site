@@ -11,20 +11,22 @@ order: 3
 			<div class="content">
 				<h2>The stuff I write</h2>
 			{% for post in site.posts %}
-				<article class="topContent">
-
-					<header>
-						<a href="{{ post.url | prepend: site.url }}"><h2>{{ post.title }}</h2></a>
-					</header>
+				{% if post.tag != "music" %}
+					<article class="topContent">
 	
-					<footer>
-						<p class="post-info">by {{ post.author }} on {{post.date | date_to_string }}</p>
-					</footer>
-	
-					<content>
-						<p>{{ post.preview }}</p>	
-					</content>					
-				</article>
+						<header>
+							<a href="{{ post.url | prepend: site.url }}"><h2>{{ post.title }}</h2></a>
+						</header>
+		
+						<footer>
+							<p class="post-info">by {{ post.author }} on {{post.date | date_to_string }}</p>
+						</footer>
+		
+						<content>
+							<p>{{ post.preview }}</p>	
+						</content>					
+					</article>
+				{% endif %}
 			{% endfor %}
 				
 			</div>
