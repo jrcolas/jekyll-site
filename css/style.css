@@ -105,6 +105,12 @@ a:hover {
 
 }
 
+.comments {
+	padding: 1% 5% 1% 5%;
+	margin-top: 2%;
+
+}
+
 .topContent header a:hover, .bottomContent header a:hover {
 	color: #508dff;
 }

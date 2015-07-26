@@ -4,6 +4,7 @@ title: "This is Techno Remixed by JrColas"
 preview: "New music has been released! Click the post title to take a listen!"
 author: "JrColas"
 tag: "music"
+comments: true
 ---
 
 

@@ -3,6 +3,7 @@ layout: post
 title: "Welcome to my website!"
 preview: "You are reading the first post ever made on my new website. Consider yourself lucky!"
 author: "JrColas"
+comments: true
 ---
 
 
@@ -22,5 +23,12 @@ as I am still working on it as well. Comments sections aren't in this post, howe
 by the time I make my second post.</p>
 
 <p>For now, this is all I have for you to read. Thanks a million for checking out the site. Until next post, have a good one!</p>
+
+<p>EDIT (July 26): I've done a lot of changes to the site since the post, including optimizing the mobile experience, getting the music page 
+up and running, including comment sections and a bit more. As I said, this website will see many bits of modifications here and there 
+in its lifetime, but at least for now, I can consider the site "good enough" for publishing. Thanks for visiting and try out the comment 
+section below!</p>
+
 <p style="font-style: italic"> - JrColas</p>
+
 
