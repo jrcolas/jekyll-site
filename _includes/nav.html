@@ -15,10 +15,10 @@
         <select onchange="location = this.options[this.selectedIndex].value;">
             <option value="" selected="selected">Navigate to...</option>
             
-            <option value="index.html">Home</option>
-            <option value="music.html">Music</option>
-            <option value="blog.html">Blog</option>
-            <option value="about.html">About</option>                  
+            <option value="{{site.url}}/index.html">Home</option>
+            <option value="{{site.url}}/music.html">Music</option>
+            <option value="{{site.url}}/blog.html">Blog</option>
+            <option value="{{site.url}}/about.html">About</option>                  
         </select>
     </nav>          
 </header>
