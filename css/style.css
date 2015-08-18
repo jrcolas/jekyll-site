@@ -8,13 +8,7 @@ a {
 	text-decoration: none;
 }
 
-.mainHeader nav ul li a:link, a:visited {
-	color: white;
-}
 
-.mainHeader nav ul li a:hover {
-	color: #d8e0ff;
-}
 
 a:link, a:visited {
 	color: black;
@@ -47,8 +41,8 @@ a:hover {
 .mainHeader nav img {
 	height: 50px;
 	width: auto;	
-	margin: 8px auto 10px;
-	padding-left: 5px;
+	margin: 8px 5px 10px auto;
+	/* padding-left: 5px; */
 	clear: both;
 	vertical-align: middle;
 	float: left;
@@ -89,7 +83,9 @@ a:hover {
 	color: #ffffff;
 }
 
-
+.mainHeader nav ul li a:hover {
+	color: #d8e0ff;
+}
 
 .active {
 	color: #d8e0ff !important;
