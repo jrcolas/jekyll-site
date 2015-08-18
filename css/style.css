@@ -24,35 +24,40 @@ a:hover {
 	margin: 0 auto;
 }
 
-.mainHeader img {
-	height: 100px;
-	width: auto;	
-	margin: 10px 10%;
-	vertical-align: middle;
-}
-
 .mainHeader {
 	position: fixed;
 	top: 0;
-    z-index: 9999;
-    padding-bottom: 25px; 
-    left: 0; 
-    width: 100%;
-    height: 120px;
-    background-color: #0052cc;
+	left: auto;
+	float: left;
+	padding-bottom: 20px; 
+	z-index: 9999;
+	width: 100%;
+	height: 45px;
+	/*background-color: #0052cc /* #5e8cff; */
+} 
+
+.mainHeader nav img {
+	height: 50px;
+	width: auto;	
+	margin: 8px auto 10px;
+	padding-left: 5px;
+	clear: both;
+	vertical-align: middle;
+	float: left;
 }
 
-.mainHeader nav {
-  float: left;
-  top: 0; 
-  padding-bottom: 20px; 
-  left: 0; 
-  z-index: 9999;
-  width: 100%;
-  height: 15px;
-  background-color: #5e8cff;
-  box-shadow: 0px 2px 5px  #888888;
-}
+.staticNav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	float: left;
+	padding-bottom: 20px; 
+	z-index: 9999;
+	width: 100%;
+	height: 45px;
+	background-color: #0052cc; /* #5e8cff; */
+	box-shadow: 0px 2px 5px #adadad;
+} 
 
 .mainHeader nav select {
 	display: none;
@@ -61,7 +66,7 @@ a:hover {
 .mainHeader nav ul {
 	float: left;
 	list-style: none;
-	margin: 9px 10%;
+	margin: 24px 0;
 }
 
 .mainHeader nav ul li {
@@ -76,10 +81,13 @@ a:hover {
 	color: #ffffff;
 }
 
-.mainHeader nav ul li a:hover{
+.mainHeader nav ul li a:link, a:visited {
 	color: white;
 }
 
+.mainHeader nav ul li a:hover {
+	color: #d8e0ff;
+}
 
 .active {
 	color: #d8e0ff !important;
@@ -88,7 +96,7 @@ a:hover {
 
 
 .mainContent, .mainSidebar {
-	margin-top: 165px;
+	margin-top: 65px;
 	line-height: 25px;
 }
 
@@ -110,6 +118,8 @@ a:hover {
 	margin-top: 2%;
 
 }
+
+
 
 .topContent header a:hover, .bottomContent header a:hover {
 	color: #508dff;
