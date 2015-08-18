@@ -8,6 +8,14 @@ a {
 	text-decoration: none;
 }
 
+.mainHeader nav ul li a:link, a:visited {
+	color: white;
+}
+
+.mainHeader nav ul li a:hover {
+	color: #d8e0ff;
+}
+
 a:link, a:visited {
 	color: black;
 }
@@ -81,13 +89,7 @@ a:hover {
 	color: #ffffff;
 }
 
-.mainHeader nav ul li a:link, a:visited {
-	color: white;
-}
 
-.mainHeader nav ul li a:hover {
-	color: #d8e0ff;
-}
 
 .active {
 	color: #d8e0ff !important;
