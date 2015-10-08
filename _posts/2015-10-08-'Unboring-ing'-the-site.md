@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 author: JrColas
 preview: Say that 100x fast
 layout: post
