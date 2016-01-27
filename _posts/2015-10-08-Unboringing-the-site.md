@@ -12,7 +12,7 @@ publish: true
 What does that mean, "unboringing" the site? Well, I've been looking at my last blog posts and as soon as I hit the link to view the post, somewhere lost deep inside of me, I sort of wish I didn't click. The page is so full with words that takes up the whole screen and it is just unpleasing to the eye. So I've decided to do something about it. 
 
 I will be adding images to my next few blog posts from now on. At least that will be something to take your eyes off the words and make you smile a little. 
-![Some random image from Google Images]({{site.baseurl}}/images/yt.png)
+![Some random image from Google Images]({{site.url}}/images/yt.png)
 
 
 
